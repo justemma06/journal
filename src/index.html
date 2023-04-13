@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Journal</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>JOURNAL</h2>
+        <br><br>
+        <form id="journal-form">
+            <div class="form-group">
+                <div class="col-sm-3" id="titles">
+                    <h6><b>TITLE:</b></h6>
+                    <input type="text" id="title" class="form-control" style="width:300px;" required>
+                </div><br><br>
+                <div class="col-sm-12">
+                    <h6> <b>INPUT A TEXT PASSAGE:</b></h6>
+                    <textarea id="text-passage" name="text-passage" class="form-control"></textarea><br>
+                </div>
+                <button id="fg" type="submit" class="btn btn-success">Submit Survey</button>
+            </div>
+        </form>
+        <br>
+        <h3 id="res">Result:</h3>
+        <div id="results">
+            <ul id="result"><br>
+                <li>Word Counter:<span id="wordCounter" class="disp"></span></li>
+                <li>Vowel Counter:<span id="vowelCounter" class="disp"></span></li>
+                <li>Consonant Counter:<span id="consonantCounter" class="disp"></span></li>
+                <li>Teaser:<span id="getTeaser" class="disp"></span></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- My Name Is Emmanuel  And I Attend Acedu Bootcamp -->
