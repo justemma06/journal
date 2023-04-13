@@ -14,3 +14,20 @@ Journal.prototype.wordCounter = function () {
     totalWords = wordArray.length;
     return totalWords;
 };
+
+// this a prototype to count the vowels and consonant words in the given words
+Journal.prototype.charCounter = function () {
+    let vowelArr = ["a", "i", "o", "e", "u"]; 
+    // list all the vowels in a array to make it easier...
+    let totalVowels = 0;
+    let totalConsonants = 0;
+    // looped through saying if in the given words vowelarr(vowels)listed includes in the passage the loop show count....and if the vowels listed does not include it show count it as a consonant word.
+    for (let i = 0; i < this.body.length; i++) {
+      if (vowelArr.includes(this.body[i])) {
+        totalVowels++;
+      } else if (this.body[i] != " ") {
+        totalConsonants++;
+      }
+    }
+    return [totalVowels, totalConsonants];
+};
