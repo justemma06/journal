@@ -31,3 +31,13 @@ Journal.prototype.charCounter = function () {
     }
     return [totalVowels, totalConsonants];
 };
+
+//  getTeaser gets the first and the 8th words in the passage....
+Journal.prototype.getTeaser = function () {
+    const wordsplit = this.body.split(" ");
+    const teaserWord = [];
+    for (let i = 0; i < 8; i++) {
+      teaserWord.push(wordsplit[i]);
+    }
+    return teaserWord;
+};
